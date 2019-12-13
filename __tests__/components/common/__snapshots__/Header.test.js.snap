@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header snapshot 1`] = `
+<nav
+  className="navbar navbar-light"
+  style={
+    Object {
+      "background": "#bdffa9",
+    }
+  }
+>
+  <a
+    className="navbar-brand justify-content-start"
+    href="#"
+  >
+    <img
+      alt=""
+      height="50"
+      src="../../../assets/logo.png"
+    />
+  </a>
+  <a
+    className="nav-link active"
+    href="/"
+  >
+    Home
+  </a>
+  <a
+    className="nav-link"
+    href="/about"
+  >
+    About
+  </a>
+  <div
+    className="form-group"
+  >
+    
+    <div
+      className="field"
+    >
+      <select
+        className="form-control"
+        name="userid"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          test
+        </option>
+        <option
+          value={8}
+        >
+          Chris
+        </option>
+        <option
+          value={2}
+        >
+          Dave
+        </option>
+        <option
+          value={5}
+        >
+          Lance
+        </option>
+        <option
+          value={7}
+        >
+          Nathaniel
+        </option>
+        <option
+          value={6}
+        >
+          Paul
+        </option>
+        <option
+          value={1}
+        >
+          Robin
+        </option>
+        <option
+          value={3}
+        >
+          Ross
+        </option>
+        <option
+          value={4}
+        >
+          Ryan
+        </option>
+        <option
+          value={9}
+        >
+          Sam
+        </option>
+      </select>
+    </div>
+  </div>
+</nav>
+`;

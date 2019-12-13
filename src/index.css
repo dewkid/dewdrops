@@ -1,0 +1,22 @@
+#app {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 0px 0 0px 0;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}

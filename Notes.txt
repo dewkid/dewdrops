@@ -1,0 +1,21 @@
+* Start with the React/Redux "Starter Kit" (barebones)
+* Add index.html,css and js
+* Create webpack.config.dev.js
+
+devServer to run development in webpack
+
+
+TODO:
+
+BUG - Login or out on view page will re-render the comment list to what it was when you first came to the page (before adding comments)
+	
+BUG - If logged in and click home, login then logout, get an error: - only happens with reduxImmutableStateInvariant
+	browser.js:38 Uncaught Invariant Violation: A state mutation was detected between dispatches, in the path `users.0`.
+	This may cause incorrect behavior. (http://redux.js.org/docs/Troubleshooting.html#never-mutate-reducer-arguments)
+	
+
+
+PROBLEM:
+Couldn't get connect(mapStateToProps) to work.  A breakpoint in mapStateToProps was never being hit!
+This is becase my router was sending the browser to the exported function component, INSTEAD of the default export connect!
+Once I fixed the reference in the router, it started working correctly!

@@ -1,6 +1,6 @@
 # The Task
 
-Create a react/redux web app using AWS services that allows a user to upload an image and then display a set of images with comments, i.e. a poor man’s Instagram. By AWS services, things like S3, RDS, ELB, etc. User authentication is not required as that may increase the scope of the project beyond what could be accomplished in the allotted time.
+Create a react/redux web app using AWS services that allows a user to upload an image and then display a set of images with comments, i.e. a poor man’s Instagram. By AWS services, things like S3, RDS, ELB, etc. User authentication is not required.
 
 - Landing page should display all images as thumbnails
 - Landing page should provide means for uploading new image/caption

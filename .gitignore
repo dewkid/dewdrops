@@ -37,3 +37,8 @@ build
 
 # json-server db
 db.json
+/tools/imageData/bob.jpg
+/tools/imageData/character.jpg
+/tools/imageData/ski.jpg
+/tools/imageData/sunset.jpg
+/tools/imageData/void.jpg

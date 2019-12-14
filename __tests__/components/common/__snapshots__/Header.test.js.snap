@@ -11,7 +11,7 @@ exports[`Header snapshot 1`] = `
 >
   <a
     className="navbar-brand justify-content-start"
-    href="#"
+    href="/"
   >
     <img
       alt=""

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import * as dewdropActions from '../../redux/actions/dewdropActions';
 import * as fileActions from '../../redux/actions/fileActions';
 import { bindActionCreators } from 'redux';
-import Spinner from '../common/Spinner';
 import DewdropForm from './DewdropForm';
 import PropTypes from 'prop-types';
 import { newDewdrop } from '../../../tools/mockData';

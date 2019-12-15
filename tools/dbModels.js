@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 const connection = new Sequelize('dewdropsweb', 'postgres', '2ManageBean4!', {
-  host: 'localhost',
+  host: 'dewdrops-db.c5otqhj2icqw.us-west-1.rds.amazonaws.com',
   dialect: 'postgres' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
 });
 

@@ -32,8 +32,8 @@ copyFiles(mockImageDataPath, imageDataPath, [
   'void.jpg'
 ])
   .then(() => {
-    console.log('done');
     setupPostgresTables();
+    console.log('done');
   })
   .catch(err => {
     console.log(err);
@@ -74,6 +74,7 @@ async function createTableData() {
 }
 
 function setupPostgresTables() {
+  console.log('testing connection');
   testConnection();
   connection.sync({ force: true }).then(() => {
     console.log('db tables created');

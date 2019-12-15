@@ -4,7 +4,7 @@ const { Dewdrop, User, Comment } = require('./dbModels');
 const fs = require('fs');
 const formidable = require('formidable');
 
-const baseImagePath = './tools/imageData/';
+const baseImagePath = '//dewdrops-app.s3-us-west-1.amazonaws.com/imageData/';
 const server = express();
 
 server.use(bodyParser.json());

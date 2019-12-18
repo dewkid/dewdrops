@@ -1,11 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { Dewdrop, User, Comment } = require('./dbModels');
 const fs = require('fs');
 const formidable = require('formidable');
 
 const baseImagePath = './tools/imageData/';
 const server = express();
+
+const { setPassword } = require('./argParser');
+
+setPassword(process.argv);
+
+const { Dewdrop, User, Comment } = require('./dbModels');
 
 server.use(bodyParser.json());
 server.use(express.static('app/public'));

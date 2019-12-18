@@ -2,9 +2,10 @@
   "name": "dewdrops",
   "description": "Dewdrops by Robin Warren",
   "scripts": {
-    "start": "run-p start:dev start:api",
+    "startold": "run-p start:dev start:api",
+    "start": "npm-run-all --parallel start:dev \"start:api -- {1}\" --",
     "start:dev": "webpack-dev-server --config webpack.config.dev.js --port 3000",
-    "prestart:api": "node tools/createMockDb.js",
+    "createmock": "node tools/createMockDb.js",
     "start:api": "node tools/expressApiServer.js",
     "test": "jest --watchAll",
     "test:ci": "jest",

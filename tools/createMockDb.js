@@ -5,6 +5,9 @@ const rimraf = require('rimraf');
 const path = require('path');
 const { dewdrops, comments, users } = require('./mockData');
 const copyFilePromise = util.promisify(fs.copyFile);
+const { setPassword } = require('./argParser');
+
+setPassword(process.argv);
 
 const { User, Dewdrop, Comment, connection } = require('./dbModels');
 

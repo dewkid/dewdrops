@@ -1,9 +1,15 @@
 const Sequelize = require('sequelize');
 
-const connection = new Sequelize('dewdropsweb', 'postgres', '2ManageBean4!', {
-  host: 'localhost',
-  dialect: 'postgres' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
-});
+const connection = new Sequelize(
+  'dewdropsweb',
+  'postgres',
+  process.env.DB_PASSWORD,
+  {
+    host: 'localhost',
+    dialect: 'postgres' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */,
+    logging: false
+  }
+);
 
 const User = connection.define(
   'user',

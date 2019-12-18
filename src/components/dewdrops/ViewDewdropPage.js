@@ -204,7 +204,7 @@ function mapStateToProps(state) {
         ? state.currentDewdrop
         : {
             ...state.currentDewdrop,
-            userName: getUserNameById(state.users, state.currentDewdrop.id)
+            userName: getUserNameById(state.users, state.currentDewdrop.userid)
           },
 
     currentUser: state.currentUser

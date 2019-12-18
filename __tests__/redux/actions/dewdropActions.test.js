@@ -34,7 +34,7 @@ describe('Async Actions', () => {
   });
 });
 
-describe('createDewdropsSucces', () => {
+describe('createDewdropsSuccess', () => {
   it('should create a CREATE_DEWDROP_SUCCESS action', () => {
     //arrange
     const dewdrop = dewdrops[0];

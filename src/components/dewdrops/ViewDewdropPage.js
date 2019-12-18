@@ -187,7 +187,7 @@ function getUserNameById(users, id) {
   return user.name;
 }
 
-function mapStateToProps(state) {
+export function mapStateToProps(state) {
   return {
     comments:
       state.users.length === 0 || state.comments.length === 0

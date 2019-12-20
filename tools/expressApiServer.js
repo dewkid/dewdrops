@@ -36,7 +36,7 @@ server.post('/upload', function(req, res, next) {
     var newpath = baseImagePath + filename;
 
     console.log('Copy from ' + oldpath + ' to ' + newpath);
-    // copy the file to a new location
+    // copy the file to a new location (mv is probably a better choice)
     fs.copyFile(oldpath, newpath, function(err) {
       if (err) {
         res.status(400).send(err);

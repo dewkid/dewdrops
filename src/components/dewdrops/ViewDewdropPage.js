@@ -218,7 +218,6 @@ function mapDispatchToProps(dispatch) {
         currentDewdropActions.loadCurrentDewdrop,
         dispatch
       ),
-      loadComments: bindActionCreators(commentActions.loadComments, dispatch),
       loadCommentsFor: bindActionCreators(
         commentActions.loadCommentsFor,
         dispatch

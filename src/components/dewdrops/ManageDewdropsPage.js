@@ -95,10 +95,8 @@ ManageDewdropsPage.propTypes = {
 };
 
 function mapStateToProps(state) {
-  const dewdrop = newDewdrop;
-
   return {
-    dewdrop,
+    dewdrop: newDewdrop,
     users: state.users,
     currentUser: state.currentUser
   };

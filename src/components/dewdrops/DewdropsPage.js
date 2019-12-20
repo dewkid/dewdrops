@@ -83,8 +83,7 @@ function mapStateToProps(state) {
           }),
     currentUser: state.currentUser,
     users: state.users,
-    loading: state.apiCallsInProgress > 0,
-    storedImagesPath: state.storedImagesPath
+    loading: state.apiCallsInProgress > 0
   };
 }
 
